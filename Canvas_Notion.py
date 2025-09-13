@@ -1,23 +1,18 @@
 import requests
 
-# ========================
-# CONFIG
-# ========================
 CANVAS_BASE = "https://dwight.instructure.com/api/v1"
 CANVAS_TOKEN = "4851~mmHQVPxhCMVXt7Am7XrHeuHQyuQnEQJwYXGXwwfkFNQDZAHPxztnMywrZUmLBaZv"
 COURSE_IDS = [7297]  # Add more course IDs if needed
 
 NOTION_TOKEN = "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"
-NOTION_DATABASE_ID = "26d2b5d3-a8c4-80bb-96dc-000b50cd0054" 
+NOTION_DATABASE_ID = "26d2b5d3a8c480bb96dc000b50cd0054"
 
-headers_canvas = {"Authorization": f"Bearer {CANVAS_TOKEN}"} 
+headers_canvas = {"Authorization": f"Bearer {CANVAS_TOKEN}"}
 headers_notion = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
     "Content-Type": "application/json",
     "Notion-Version": "2022-06-28"
 }
-
-
 # ========================
 # FETCH NOTION DATABASE SCHEMA
 # ========================
