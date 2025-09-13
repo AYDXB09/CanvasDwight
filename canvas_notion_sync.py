@@ -8,10 +8,10 @@ import time
 class CanvasNotionSync:
     def __init__(self):
         # API credentials from environment variables
-        self.canvas_api_url = os.getenv('https://dwight.instructure.com/api/v1')  # https://yourschool.instructure.com/api/v1
-        self.canvas_token = os.getenv('4851~ArLNEBFPyfTHQyWmyrahH8hA49D7tfxRRURcG4vfVHWcf3ku2eGfeVxk3RNu9htH')
-        self.notion_token = os.getenv('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')
-        self.notion_database_id = os.getenv('26d2b5d3a8c480bb96dc000b50cd0054')
+        self.canvas_api_url = os.getenv('CANVAS_API_URL')  # https://yourschool.instructure.com/api/v1
+        self.canvas_token = os.getenv('CANVAS_TOKEN')
+        self.notion_token = os.getenv('NOTION_TOKEN')
+        self.notion_database_id = os.getenv('NOTION_DATABASE_ID')
         
         # Headers for API requests
         self.canvas_headers = {
