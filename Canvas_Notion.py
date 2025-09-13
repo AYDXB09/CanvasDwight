@@ -8,7 +8,7 @@ CANVAS_TOKEN = "4851~mmHQVPxhCMVXt7Am7XrHeuHQyuQnEQJwYXGXwwfkFNQDZAHPxztnMywrZUm
 COURSE_IDS = [7297]  # Add more course IDs if needed
 
 NOTION_TOKEN = "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"
-NOTION_DATABASE_ID = "26d2b5d3a8c480099033d5e08e763f82"
+NOTION_DATABASE_ID = "26d2b5d3a8c480099033d5e08e763f82" 
 
 headers_canvas = {"Authorization": f"Bearer {CANVAS_TOKEN}"} 
 headers_notion = {
